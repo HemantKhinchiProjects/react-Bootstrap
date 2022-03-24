@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 const Navbar = (props) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -67,5 +68,8 @@ const Navbar = (props) => {
       </div>
     </nav>
   );
+};
+Navbar.propTypes = {
+  title: PropTypes.string,
 };
 export default Navbar;

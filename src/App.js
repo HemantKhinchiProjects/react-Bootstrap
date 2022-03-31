@@ -5,6 +5,7 @@ import Form from './Components/Forms/Forms';
 import Button from './Components/Buttons/Button';
 export default function App() {
   const webTitle = ' React';
+  const uppercaseHandler = () => {};
   return (
     <>
       <Navbar title={webTitle} />
@@ -12,7 +13,7 @@ export default function App() {
         <Form heading="Ennter your Content" />
         <div className="row">
           <div>
-            <Button btnName="Uppercase" />
+            <Button btnName="Uppercase" onClick={uppercaseHandler} />
           </div>
         </div>
       </div>

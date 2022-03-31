@@ -9,6 +9,10 @@ const Forms = (props) => {
     setText(newText);
   }; //code for button
 
+  const lawercaseHandler = () => {
+    const newText = text.toLowerCase();
+    setText(newText);
+  };
   const textChangeHandler = (e) => {
     e.preventDefault();
     setText(e.target.value);
@@ -27,7 +31,23 @@ const Forms = (props) => {
       </div>
       <div className="row">
         <div>
-          <Button btnName="Uppercase" uppercaseHandler={uppercaseHandler} />
+          <div className="btn-group">
+            <Button
+              btnName="Upper case"
+              btnName2="Lower case"
+              uppercaseHandler={uppercaseHandler}
+              lawercaseHandler={lawercaseHandler}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          <h2>Your Text Summry</h2>
+          <p>
+            {text.split(' ').length} Words and {text.length} characters
+          </p>
+          <p>{0.008 * text.split(' ').length} minutes reading time</p>
         </div>
       </div>
     </React.Fragment>

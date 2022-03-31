@@ -10,6 +10,13 @@ const Button = (props) => {
       >
         {props.btnName}
       </button>
+      <button
+        type="button"
+        className="btn btn-primary"
+        onClick={props.lawercaseHandler}
+      >
+        {props.btnName2}
+      </button>
     </React.Fragment>
   );
 };

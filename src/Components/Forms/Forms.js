@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Styles from './Forms.module.css';
 const Forms = (props) => {
+  const [text, setText] = useState('Enter Text here');
+
   const clickHandler = (e) => {
     e.preventDefault();
+    text.value()
     console.log('You clicked submit.');
   };
   return (

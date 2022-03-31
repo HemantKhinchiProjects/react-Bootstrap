@@ -3,14 +3,17 @@ import Styles from './Forms.module.css';
 import Button from '../Buttons/Button';
 const Forms = (props) => {
   const [text, setText] = useState('Enter Text here');
-  const uppercaseHandler = (e) => {
+
+  const uppercaseHandler = () => {
     const newText = text.toUpperCase();
     setText(newText);
-  };
+    alert('asdf');
+  }; //code for button
+
   const textChangeHandler = (e) => {
     e.preventDefault();
     setText(e.target.value);
-  };
+  }; //code for textarea
   return (
     <React.Fragment>
       <h1>{props.heading} </h1>
@@ -25,14 +28,8 @@ const Forms = (props) => {
       </div>
       <div className="row">
         <div>
-          <button
-            type="button"
-            className="btn btn-primary"
-            onClick={uppercaseHandler}
-          >
-            Upper Case
-          </button>
-          <Button btnName=" Upper Case" onClick={uppercaseHandler} />
+          
+          <Button btnName="Uppercase" uppercaseHandler={uppercaseHandler} />
         </div>
       </div>
     </React.Fragment>

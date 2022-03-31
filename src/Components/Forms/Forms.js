@@ -1,16 +1,14 @@
 import React from 'react';
 import Styles from './Forms.module.css';
-const Forms = () => {
+const Forms = (props) => {
   const clickHandler = (e) => {
     e.preventDefault();
     console.log('You clicked submit.');
   };
   return (
     <React.Fragment>
+      <h1>{props.heading}</h1>
       <div className="mb-3">
-        <label forhtml="exampleFormControlTextarea1" className="form-label">
-          Example textarea
-        </label>
         <textarea
           className="form-control"
           id="exampleFormControlTextarea1"

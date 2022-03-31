@@ -9,10 +9,10 @@ export default function App() {
     <>
       <Navbar title={webTitle} />
       <div className="container">
-        <Form />
+        <Form heading="Ennter your Content" />
         <div className="row">
           <div>
-            <Button />
+            <Button btnName="Uppercase" />
           </div>
         </div>
       </div>

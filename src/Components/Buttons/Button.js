@@ -1,10 +1,10 @@
 import React from 'react';
 import Styles from './Forms.module.css';
-const Button = () => {
+const Button = (props) => {
   return (
     <React.Fragment>
       <button type="button" class="btn btn-primary">
-        Uppercase
+        {props.btnName}
       </button>
     </React.Fragment>
   );

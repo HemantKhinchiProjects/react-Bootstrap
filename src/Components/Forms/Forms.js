@@ -7,7 +7,6 @@ const Forms = (props) => {
   const uppercaseHandler = () => {
     const newText = text.toUpperCase();
     setText(newText);
-    alert('asdf');
   }; //code for button
 
   const textChangeHandler = (e) => {
@@ -28,7 +27,6 @@ const Forms = (props) => {
       </div>
       <div className="row">
         <div>
-          
           <Button btnName="Uppercase" uppercaseHandler={uppercaseHandler} />
         </div>
       </div>

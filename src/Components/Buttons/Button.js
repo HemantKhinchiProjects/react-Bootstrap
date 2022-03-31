@@ -1,6 +1,10 @@
 import React from 'react';
 import Styles from './Forms.module.css';
 const Button = (props) => {
+  const uppercaseHandler = (e) => {
+    const newText = text.toUpperCase();
+    setText(newText);
+  };
   return (
     <React.Fragment>
       <button type="button" className="btn btn-primary">

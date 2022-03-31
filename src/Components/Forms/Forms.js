@@ -30,9 +30,9 @@ const Forms = (props) => {
             className="btn btn-primary"
             onClick={uppercaseHandler}
           >
-            toUpperCase
+            Upper Case
           </button>
-          {/* <Button btnName="Uppercase" onClick={uppercaseHandler} /> */}
+          <Button btnName=" Upper Case" onClick={uppercaseHandler} />
         </div>
       </div>
     </React.Fragment>
